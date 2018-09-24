@@ -1,0 +1,27 @@
+<! doctype html>
+<html>
+	<head>
+		<meta charset ="utf8">
+		<title> Javascript haha</title>
+		<script  type = "text/javascript">
+			function twoNumber (number1, number2)
+			{
+				this.numberOne = number1;
+				this.numberTwo = number2;
+				
+				this.add = addTwoNumber;
+			}
+			function addTwoNumber() {
+				return this.numberOne + this.numberTwo;
+			}
+			var first = new twoNumber(25, 10);
+			document.write(first.numberOne + "<br/>");
+			document.write(first.numberTwo + "<br/>");
+			document.write(first.add());
+		</script>
+	</head>
+	
+	<body>
+		
+	</body>
+</html>

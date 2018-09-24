@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project 2: Quan ly Todo List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+	<h1>Quan ly ToDo</h1>
+	<section>
+		<form>
+			<input type="text" name="todo" id = "newTodo">
+			<button class="btn-submit" onclick="event.preventDefault(); onAddClick();">Add</button>
+		</form>
+	</section>
+
+	<section id="section-list">
+		<ul id="todo-list">
+			<!-- <li onclick="onTodoClick()">newTodo</li> -->
+		</ul>
+		
+	</section>
+</div>
+
+<script src = "app.js"></script>
+</body>
+</html>
